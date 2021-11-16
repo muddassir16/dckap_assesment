@@ -27,6 +27,25 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installation
+
+Install all the dependencies using composer
+
+composer install
+
+Run the database migrations (Set the database connection in .env before migrating)
+
+php artisan migrate
+
+Start the local development server
+
+php artisan serve
+
+Make sure you set the correct database connection information before running the migrations Environment variables
+
+php artisan migrate
+php artisan serve
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
