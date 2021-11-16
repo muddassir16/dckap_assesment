@@ -55,13 +55,14 @@ php artisan migrate /
 php artisan serve
 
 SQL : Run the below query (after database migrate)
-    INSERT INTO `tbl_customers` (`id`, `username`, `password`, `user_role`, `fname`, `lname`, `email`, `phone`, `gender`, `address`, `zipcode`, `record_status`, `created_at`, `modified_at`, `deleted_at`) VALUES (NULL, 'admin', '1234', '1', 'Admin', 'Admin', 'admin@gmail.com', '1234567890', 'male', 'chennai', '600003', '1', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000')
+
+INSERT INTO `tbl_customers` (`id`, `username`, `password`, `user_role`, `fname`, `lname`, `email`, `phone`, `gender`, `address`, `zipcode`, `record_status`, `created_at`, `modified_at`, `deleted_at`) VALUES (NULL, 'admin', '1234', '1', 'Admin', 'Admin', 'admin@gmail.com', '1234567890', 'male', 'chennai', '600003', '1', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000')
 
 Login credentials :  
-    username : admin 
+    username : admin /
     password : 1234
 
-Note : For Database - database migration and run the abouve query or else you can also download database from my documents.
+Note : For Database - database migration and run the above query or else you can also download database from my documents.
 
 ## Laravel Sponsors
 
