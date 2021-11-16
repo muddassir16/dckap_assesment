@@ -33,6 +33,14 @@ Install all the dependencies using composer
 
 composer install
 
+Copy the example env file and make the required configuration changes in the .env file
+
+cp .env.example .env
+
+Generate a new application key
+
+php artisan key:generate
+
 Run the database migrations (Set the database connection in .env before migrating)
 
 php artisan migrate
@@ -41,10 +49,24 @@ Start the local development server
 
 php artisan serve
 
+(or)
+
+localhost/dckap_assessment/public
+
 Make sure you set the correct database connection information before running the migrations Environment variables
 
-php artisan migrate
+php artisan migrate /
 php artisan serve
+
+SQL : Run the below query (after database migrate)
+
+INSERT INTO `tbl_customers` (`id`, `username`, `password`, `user_role`, `fname`, `lname`, `email`, `phone`, `gender`, `address`, `zipcode`, `record_status`, `created_at`, `modified_at`, `deleted_at`) VALUES (NULL, 'admin', '1234', '2', 'Admin', 'Admin', 'admin@gmail.com', '1234567890', 'male', 'chennai', '600003', '1', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000', '2021-11-16 08:25:50.000000')
+
+Login credentials :  
+    username : admin /
+    password : 1234
+
+Note : For Database - database migration and run the above query or else you can also download database from my documents.
 
 ## Laravel Sponsors
 
