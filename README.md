@@ -49,6 +49,10 @@ Start the local development server
 
 php artisan serve
 
+(or)
+
+localhost/dckap_assessment/public
+
 Make sure you set the correct database connection information before running the migrations Environment variables
 
 php artisan migrate /
